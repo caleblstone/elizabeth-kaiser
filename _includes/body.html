@@ -1,7 +1,35 @@
-<div id="mainContent">
+<div id="contentBox">
+    <div class="workText">
+        {% for post in site.categories[page.category] %}
+            {{ post.content }}
+        {% endfor %}
+        <div class="scroll-spacer"></div>
+    </div>
 
-    {% include header.html %}
-    {% include at.html %}
-
-
+    <div class="workImages {{ page.category }}">
+        {% for post in site.categories[page.category] %}
+            <div class="workImage">
+                <div class="workImageContent">
+                    <div class="individualImage">
+                        <img src="{{ post.image }}">
+                    </div>
+                    <div class="workInfo">
+                    <div>
+                        <p><em>{{ post.title }}</em>, {{ post.year }}</p>
+                    </div>
+                    <div>
+                        <p>{{ post.medium }}</p>
+                    </div>
+                    <div>
+                        <p>{{ post.dimensions }}</p>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        {% endfor %}
+        <!-- <div class="scroll-spacer"></div> -->
+    </div>
 </div>
+
+ 
