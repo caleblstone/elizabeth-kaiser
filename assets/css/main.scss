@@ -83,12 +83,7 @@ body{
         .early:hover{
             background-color: #FFE895;
         }
-        .blog{
-            display: none !important; 
-        }
-        .about{
-            display: none !important;
-        }
+        
 
         .navBarItem{
             font-size: 20px;
@@ -97,9 +92,12 @@ body{
             align-items: center;
             border: 1px solid black;
             height: 4vh;
-            
-
-            
+        }
+        .blog{
+            display: none; 
+        }
+        .about{
+            display: none;
         }
     }
 }
