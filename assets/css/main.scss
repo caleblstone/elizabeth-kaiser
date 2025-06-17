@@ -83,6 +83,12 @@ body{
         .early:hover{
             background-color: #FFE895;
         }
+        .blog{
+            display: none !important; 
+        }
+        .about{
+            display: none !important;
+        }
 
         .navBarItem{
             font-size: 20px;
@@ -277,7 +283,15 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 40px;
-        margin-bottom: 40px
+        margin-bottom: 60px;
+
+        img{
+            width: 30vw;
+            max-width: 500px;
+            min-width: 300px;
+        }
+
+
     }
 }
 
@@ -330,3 +344,273 @@ body{
     }
 }
 
+// Add at the end of your SCSS file
+
+#imageCarouselOverlay {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: #FFF8F2;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageCarouselOverlay.active {
+    display: flex;
+}
+
+#imageCarouselOverlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    // box-shadow: 0 0 24px #000;
+    // background: #fff;
+    // border-radius: 8px;
+}
+
+.carousel-arrow, .carousel-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 48px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.carousel-arrow:hover, .carousel-close:hover {
+    cursor: pointer;
+}
+
+.carousel-arrow.left { left: 32px; }
+.carousel-arrow.right { right: 32px; }
+.carousel-close {
+    top: 32px;
+    right: 32px;
+    font-size: 40px;
+    transform: none;
+}
+
+
+@media (max-width: 600px) {
+    body{
+        padding: 0px;
+        width: 100vw;
+        height: unset;
+        #mainContent{
+            margin: 0px;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            height: unset;
+
+        }
+    }
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+        background-color: #FFF8F2;
+        padding-bottom: 16px;
+        z-index: 999;
+    
+        #mainName{
+            h1{
+                font-size: 32px;
+                margin: 16px;
+            }
+        }
+        .upperNav{
+            display: none;
+        }
+
+        #navBar{
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            overflow-x: scroll;
+            height: max-content;
+
+            a{
+                margin-right: 8px;
+                margin-left: 8px;
+                
+            }
+            
+            div{
+                // margin-right: 16px;
+                border-radius: 20px;
+                nav{
+                    white-space: nowrap;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    font-size: 16px;
+                }
+                width: 100%;
+            }
+        }
+    }
+    #contentBox{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        overflow: visible;
+        padding-top: 0px;
+
+        .workText{
+            width: auto;
+            height: auto;
+            padding-left: 8px;
+            padding-right: 8px;
+            overflow: visible;
+            text-align: justify;
+            padding-top: 24px;
+            padding-bottom: 0px;
+        p{
+             margin-top: 0px;
+            font-size: 20px;
+        }
+       
+
+        }
+        .workImages{
+            display: flex;
+            flex-direction: column;
+            padding-top: 0px;
+
+            .workImage{
+            height: auto;
+            width: 100%;
+            display: flex;
+
+                .workImageContent{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 16px;
+                    max-width: 100%;
+                    align-items: start;
+                    justify-items: start;
+
+                    .workInfo{
+                        margin-top: 8px;
+                        p{
+                            margin: 0px;
+                            padding: 0px; 
+                            font-size: 16px;                   
+                        }
+                    }
+                }    
+            }
+        }
+    }
+
+    #blogContent{
+    height: unset;
+    padding-top: 24px;
+    overflow-y: scroll;
+    scrollbar-width: none;      // Firefox
+        -ms-overflow-style: none;   // IE and Edge
+
+        &::-webkit-scrollbar {      // Chrome, Safari, Opera
+            display: none;
+        }
+    
+    .blogPost{
+        position: relative;
+        width: auto;
+        min-height: 100px; // adjust as needed
+        margin-left: 8px;
+        margin-right: 8px;
+        
+
+        .blogPostTitle{
+            position: relative;
+            width: auto;
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+
+            div{
+                font-size: 16px;
+            }
+
+            h2{
+                font-family: "eb-garamond", serif;
+                font-weight: 200;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 40px;
+                margin: 0px;
+            }
+        }
+        .blogPostContent{
+            width: auto;
+            max-width: unset;
+            min-width: unset;
+            margin-left: unset;
+            margin-right: unset;
+
+        }
+    }
+
+    .squiggleBox{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px
+    }
+}
+
+    #aboutContent {
+        padding-top: 0; // Remove top padding so sticky header is flush with top
+    }
+
+    #aboutContent {
+        height: auto;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 8px;
+        margin-right: 8px;
+        overflow-y: scroll;
+        scrollbar-width: none;      // Firefox
+        -ms-overflow-style: none;   // IE and Edge
+
+        &::-webkit-scrollbar {      // Chrome, Safari, Opera
+            display: none;
+        }
+    
+
+    .aboutPost {
+        background: none;
+        
+
+        div{
+            width: auto;
+            margin-top: 0px;
+            margin-bottom: 24px;
+            img{
+            width: 100%;
+        }
+
+        }
+
+        
+    }
+}
+
+    
+  
+}

@@ -34,6 +34,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections_dir: collectionsFolder
+
+collections:
+  - about
+  - beadedWork
+  - blog
+  - drawing
+  - earlyWork
+  - fabricCollage
+  - print
+
+
+ 
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
