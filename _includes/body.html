@@ -7,7 +7,7 @@
     </div>
 
     <div class="workImages {{ page.category }}">
-        {% for post in site.[page.category] %}
+        {% for post in site.[page.category] | sort: "order" %}
             <div class="workImage">
                 <div class="workImageContent">
                     <div class="individualImage">

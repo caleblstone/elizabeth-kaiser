@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: fbb66349001efbc7e5ce
+    multiple: true
+  settings:
+    defaultOperations: 
+
+collections:
+  - name: "about"
+    label: "About" 
+    folder: "collectionsFolder/_about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string", default: "post" }
+      - { label: "Categories", name: "categories", widget: "string", default: "about" }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "beadedWork"
+    label: "Beaded Work" 
+    folder: "collectionsFolder/_beadedWork"
+    create: true
+    slug: "Beaded-Work-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog"
+    label: "Blog" 
+    folder: "collectionsFolder/_blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "drawing"
+    label: "Drawing" 
+    folder: "collectionsFolder/_drawing"
+    create: true
+    slug: "Drawing-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "earlyWork"
+    label: "Early Work" 
+    folder: "collectionsFolder/_earlyWork"
+    create: true
+    slug: "Early-Work-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "fabricCollage"
+    label: "Fabric + Collage" 
+    folder: "collectionsFolder/_fabricCollage"
+    create: true
+    slug: "Fabric-and-Collage-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "print"
+    label: "Print" 
+    folder: "collectionsFolder/_print"
+    create: true
+    slug: "Print-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "string", required: false }
+      - { label: "Medium", name: "materials", widget: "string", required: false}
+      - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+      - { label: "Images", name: "images", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  
