@@ -6,7 +6,7 @@ categories: text
 year: "2025"
 medium: "Colored pencil on board"
 dimensions: "8.5 x 11 in."
-image: https://images.squarespace-cdn.com/content/v1/60fcc985dce0f701975ed91d/1718379227356-KO6Q16Q80B0TOZXMVIKZ/women.jpg?format=1500w
+images: https://images.squarespace-cdn.com/content/v1/60fcc985dce0f701975ed91d/1718379227356-KO6Q16Q80B0TOZXMVIKZ/women.jpg?format=1500w
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec placerat tellus. Aenean nec purus urna. Morbi egestas malesuada ante, quis fermentum massa viverra ac. Suspendisse sapien nibh, fringilla id dui a, porta dignissim risus. Fusce aliquet ligula et odio venenatis gravida. Proin malesuada, tortor eget gravida ultricies, magna turpis tristique purus, rutrum malesuada sapien tellus nec massa. Aliquam ac sapien blandit, elementum odio quis, feugiat orci. Nunc sit amet nulla non orci porta elementum eu sit amet arcu. Quisque placerat risus magna. Vestibulum lectus tortor, euismod sit amet tempor quis, semper quis velit. Nulla finibus eleifend erat, sed sagittis lorem accumsan id. Nulla enim tellus, facilisis vitae lorem eu, faucibus tristique nibh. Quisque mollis, lorem ac dictum accumsan, tellus leo gravida nunc, sit amet ultricies velit ex ac mi. Aenean massa neque, gravida non justo eget, sagittis pulvinar enim. Integer aliquet tortor a interdum ultrices.
 
