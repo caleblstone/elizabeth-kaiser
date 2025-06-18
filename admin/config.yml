@@ -19,8 +19,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "string", default: "post" }
-      - { label: "Categories", name: "categories", widget: "string", default: "about" }
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "beadedWork"
@@ -30,7 +28,7 @@ collections:
     slug: "Beaded-Work-{{order}}-{{slug}}"
     fields:
       - { label: "Order", name: "order", widget: "number", required: true }
-      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Medium", name: "materials", widget: "string", required: false}
       - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
@@ -52,7 +50,7 @@ collections:
     slug: "Drawing-{{order}}-{{slug}}"
     fields:
       - { label: "Order", name: "order", widget: "number", required: true }
-      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Medium", name: "materials", widget: "string", required: false}
       - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
@@ -65,7 +63,7 @@ collections:
     slug: "Early-Work-{{order}}-{{slug}}"
     fields:
       - { label: "Order", name: "order", widget: "number", required: true }
-      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Medium", name: "materials", widget: "string", required: false}
       - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
@@ -78,7 +76,7 @@ collections:
     slug: "Fabric-and-Collage-{{order}}-{{slug}}"
     fields:
       - { label: "Order", name: "order", widget: "number", required: true }
-      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Medium", name: "materials", widget: "string", required: false}
       - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
@@ -91,7 +89,7 @@ collections:
     slug: "Print-{{order}}-{{slug}}"
     fields:
       - { label: "Order", name: "order", widget: "number", required: true }
-      - { label: "Title", name: "year", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Year", name: "year", widget: "string", required: false }
       - { label: "Medium", name: "materials", widget: "string", required: false}
       - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
