@@ -1,7 +1,7 @@
 ---
 order: 1
 title: Threnody I
-year: "2024"
+year: "2025"
 materials: Hand fabricated copper and brass belt buckle, eco printed fabric,
   seed beads, batting, thread.
 dimensions: 20 x 10 x 3"
