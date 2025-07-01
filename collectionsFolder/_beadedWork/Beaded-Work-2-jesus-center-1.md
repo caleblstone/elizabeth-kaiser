@@ -3,7 +3,7 @@ order: 2
 title: Jesus Center
 year: "2025"
 materials: Beaded panel
-dimensions: .
+dimensions: ""
 images:
-  - https://ucarecdn.com/a12df8a4-24d4-4e73-9daf-32b7cac49a17/
+  - https://ucarecdn.com/5d0fc6f1-a9b4-4afd-8194-e3cb0eaa1957/
 ---
