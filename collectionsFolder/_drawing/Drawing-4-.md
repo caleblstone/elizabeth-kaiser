@@ -1,6 +1,6 @@
 ---
 order: 4
-title: " "
+title: "Sneaking out "
 year: "2024"
 materials: Colored pencil on paper
 dimensions: 4 x 6"
