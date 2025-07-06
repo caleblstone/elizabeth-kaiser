@@ -1,6 +1,6 @@
 ---
 order: 6
-title: " "
+title: " Ovo II"
 year: "2024"
 materials: Colored pencil on paper
 dimensions: '4 x 6" '
