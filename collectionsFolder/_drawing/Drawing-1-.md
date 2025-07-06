@@ -1,6 +1,6 @@
 ---
 order: 2
-title: " "
+title: Gender signal
 year: "2024"
 materials: Colored pencil on paper
 dimensions: 4 x 6"
